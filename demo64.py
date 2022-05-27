@@ -1,0 +1,9 @@
+def calculate(x):
+    for i in range(0, 1000000):
+        x += 0.0000001
+    x -= 0.1
+    return x
+
+
+for y in [1000000, 10000, 1, 0.1]:
+    print(calculate(y)-y)
